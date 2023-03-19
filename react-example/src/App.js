@@ -41,7 +41,7 @@ function MovieList(props) {
         props.fav_movies.map(movie => {
         return <li>
           <h3>{movie.title}</h3>
-          <img src={movie.poster} alt={movie.poster}/>
+          <img height= "200" src={movie.poster} alt={movie.poster}/><br />
           <button onClick={ () => removeItem(movie.title)  }>Remove</button> 
         </li>
         }
